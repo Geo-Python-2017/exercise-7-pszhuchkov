@@ -22,8 +22,7 @@ In this problem the goals are to:
 2. Convert the `DATE_m` column to the Pandas datetime format.
 3. Set the `DATE_m` column as the DataFrame index
 4. Make a line plot of temperatures in Celsius from 2010-2017.
-
-  - The line should be a dashed black line with circles for the data points, and include a descriptive title and axis labels.
+    - The line should be a dashed black line with circles for the data points, and include a descriptive title and axis labels.
 
 Save your Python script file as `temperature_plot.py` in GitHub and include a copy of the plot it produces in your answer to Problem 1 below.
 More guidance on this problem can be found in [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html).
@@ -37,7 +36,14 @@ For Problem 2, the goal is to recreate the plot above, a 4-panel plot showing se
 To do this, you should:
 
 1. Start by creating a new Python script called `anomaly_subplots.py` and performing steps 1-3 from Problem 1 to prepare the data for plotting.
-2. 
+2. Create a yearly Pandas datetime index from 1953-2016 using the `pd.date_range()` function.
+3. Create an empty Pandas DataFrame called `seasonalData` using the index you just created and column titles 'Winter', 'Spring', 'Summer', and 'Fall'.
+4. Fill the data frame with mean temperatures for each season in each year.
+    - Assume that Winter is December-February, Spring is March-May, Summer is June-August, and Fall is September-November.
+5. Create a figure with 4 subplots in the arrangement shown above, labeling axes as needed, with gridlines on, and with a line legend for each panel.
+    - You can find tips about these different plot features in the [Matplotlib documentation](https://matplotlib.org/contents.html) and [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html).
+
+Save your Python script in GitHub and include a copy of the plot it produces in your answer to Problem 2 below.
 
 # Answers
 
