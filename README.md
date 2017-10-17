@@ -24,12 +24,20 @@ In this problem the goals are to:
 4. Make a line plot of temperatures in Celsius from 2010-2017.
 
   - The line should be a dashed black line with circles for the data points, and include a descriptive title and axis labels.
-  
+
+Save your Python script file as `temperature_plot.py` in GitHub and include a copy of the plot it produces in your answer to Problem 1 below.
 More guidance on this problem can be found in [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html).
 
-## Problem 2 - Seasonal temperature anomalies, visualized
+## Problem 2 - Seasonal temperature anomalies, visualized (5 points)
 
+![img/Ex7-2.png](img/Ex7-2.png)<br/>
+*The goal for this exercise is to make this plot.*
 
+For Problem 2, the goal is to recreate the plot above, a 4-panel plot showing seasonal temperature anomalies from 1953-2016.
+To do this, you should:
+
+1. Start by creating a new Python script called `anomaly_subplots.py` and performing steps 1-3 from Problem 1 to prepare the data for plotting.
+2. 
 
 # Answers
 
