@@ -66,7 +66,12 @@ To do this, you should:
 
 Save your Python script in GitHub and include copies of the plots that you created **OR** the animation that was produced from those plots in your answer to Problem 3 below.
 
-# Problem 4 (optional) - Comparing seasonal temperature anomalies, animated 
+# Problem 4 (optional) - Comparing seasonal temperature anomalies, animated
+
+In problem 4, which is an optional task, your aim is to create a similar animation as in Problem 3 but create a 2-panel plot (2 rows, 1 column) where the upper plot
+visualizes the weather anomalies from Helsinki, and the lower visualizes the weather anomalies from **Sodankylä** (data from Problem 4 in Exercise 6 last week).
+
+Write your codes into a separate script called `anomaly_bar_subplots.py`, and add your code and the animation to GitHub.
 
 # Answers
 
