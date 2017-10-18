@@ -59,7 +59,7 @@ To do this, you should:
 2. You should select data for each season of each year between 1953-2017 using the techniques that you have learned during the Lesson 7.
     - Assume that Winter is December-February, Spring is March-May, Summer is June-August, and Fall is September-November.
 3. You should calculate the mean temperature of the **weather anomalies** (*outcome from Problem 3 in Exercise 6 last week*) based on the selected data for each season of the year. You should end up having altogether four values for each year (i.e. one for winter, spring, summer, and fall).
-4. You should create a bar plot for each year using Pandas (altogether 65 plots) that visualizes the weather anomalies in a similar manner as in the animation above.
+4. You should create a bar plot for each year using Pandas (altogether 65 plots) that visualizes the weather anomalies in a similar manner as in the animation above (notice that the y-scale is standardized).
 5. Change the aesthetics of your plot: modify the colors of the bars (you can choose the colors yourself), and add a title, X-label (should be the year), and Y-label (you can use the same text as in the animation).
 6. You should save each of those plots into an empty folder on your disk
 7. (**optional**) After you have saved all those 65 plots into your disk, you can find information from [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html) on how to create an animation from those plots
