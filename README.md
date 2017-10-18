@@ -8,7 +8,7 @@ The answers to the questions in this week's exercise should be given by modifyin
 - Don't forget to check out [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html) if you're having trouble.
 - Scores on this exercise are out of 20 points.
 
-## Problem 0 - Creating the data file for this week (1 point)
+## Problem 0 - Creating the data file for this week (2 points)
 
 Your first task in this exercise is to write out a file with the contents of the Pandas DataFrame(s) you produced in [Exercise 6](https://github.com/Geo-Python-2017/Exercise-6), Problems 3 and 4.
 As described in [Lesson 5](https://geo-python.github.io/2017/lessons/L5/pandas-basic-operations.html#writing-data), data can be saved to a file in Pandas using `dataFrame.to_csv('file.csv, sep=',')`.
