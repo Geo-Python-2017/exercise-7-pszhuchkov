@@ -4,7 +4,7 @@ This week we'll put together our data analysis and plotting skills using Pandas 
 For each problem you will create or modify a Python script, then upload your files to GitHub.
 The answers to the questions in this week's exercise should be given by modifying the document in places where asked or at the end of this document in the [section titled Answers](#answers).
 
-- **Exercise 4 is due by 16:00 on 27.10.**
+- **Exercise 7 is due by 16:00 on 27.10.**
 - Don't forget to check out [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html) if you're having trouble.
 - Scores on this exercise are out of 20 points.
 
@@ -20,7 +20,7 @@ In this first problem we'll work with using the datetime format for Pandas data,
 You should:
 
 1. Load the Helsinki temperature data file produced above (`helsinki.csv`) into Pandas
-2. Convert the `DATE_m` column to the Pandas datetime format.
+2. Convert the `DATE_m` (or your equivalent date variable) column to the Pandas datetime format.
 3. Set the `DATE_m` column as the DataFrame index
 4. Make a line plot of temperatures in Celsius from 2010-2017.
     - The line should be a dashed black line with circles for the data points, and include a descriptive title and axis labels.
