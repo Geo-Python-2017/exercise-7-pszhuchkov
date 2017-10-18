@@ -16,7 +16,8 @@ Start by creating one data file for the Helsinki temperature data (`helsinki.csv
 
 ## Problem 1 - Doing time, plotting temperatures (6 points)
 
-In this problem the goals are to:
+In this first problem we'll work with using the datetime format for Pandas data, and creating a line plot of data from a file.
+You should:
 
 1. Load the Helsinki temperature data file produced above (`helsinki.csv`) into Pandas
 2. Convert the `DATE_m` column to the Pandas datetime format.
