@@ -39,7 +39,7 @@ To do this, you should:
 1. Start by creating a new Python script called `anomaly_subplots.py` and performing steps 1-3 from Problem 1 to prepare the data for plotting.
 2. Create a yearly Pandas datetime index from 1953-2016 using the `pd.date_range()` function.
 3. Create an empty Pandas DataFrame called `seasonalData` using the index you just created and column titles 'Winter', 'Spring', 'Summer', and 'Fall'.
-4. Fill the data frame with mean temperatures for each season in each year.
+4. Fill the data frame with mean anomaly temperatures (calculated in Exercise 6) for each season in each year.
     - Assume that Winter is December-February, Spring is March-May, Summer is June-August, and Fall is September-November.
 5. Create a figure with 4 subplots in the arrangement shown above, labeling axes as needed, with gridlines on, and with a line legend for each panel.
     - You can find tips about these different plot features in the [Matplotlib documentation](https://matplotlib.org/contents.html) and [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html).
