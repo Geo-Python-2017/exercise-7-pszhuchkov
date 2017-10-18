@@ -8,13 +8,13 @@ The answers to the questions in this week's exercise should be given by modifyin
 - Don't forget to check out [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html) if you're having trouble.
 - Scores on this exercise are out of 20 points.
 
-## Problem 0 - Creating the data file for this week
+## Problem 0 - Creating the data file for this week (1 point)
 
 Your first task in this exercise is to write out a file with the contents of the Pandas DataFrame(s) you produced in [Exercise 6](https://github.com/Geo-Python-2017/Exercise-6), Problems 3 and 4.
 As described in [Lesson 5](https://geo-python.github.io/2017/lessons/L5/pandas-basic-operations.html#writing-data), data can be saved to a file in Pandas using `dataFrame.to_csv('file.csv, sep=',')`.
 Start by creating one data file for the Helsinki temperature data (`helsinki.csv`) and a second for the Sodankylä data (`sodankyla.csv`).
 
-## Problem 1 - Doing time, plotting temperatures (5 points)
+## Problem 1 - Doing time, plotting temperatures (6 points)
 
 In this problem the goals are to:
 
@@ -27,7 +27,7 @@ In this problem the goals are to:
 Save your Python script file as `temperature_plot.py` in GitHub and include a copy of the plot it produces in your answer to Problem 1 below.
 More guidance on this problem can be found in [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html).
 
-## Problem 2 - Seasonal temperature anomalies, visualized (5 points)
+## Problem 2 - Seasonal temperature anomalies, visualized (6 points)
 
 ![img/Ex7-2.png](img/Ex7-2.png)<br/>
 *The goal for this exercise is to make this plot.*
@@ -44,6 +44,10 @@ To do this, you should:
     - You can find tips about these different plot features in the [Matplotlib documentation](https://matplotlib.org/contents.html) and [the hints for this week's exercise](https://geo-python.github.io/2017/lessons/L7/exercise-7-hints.html).
 
 Save your Python script in GitHub and include a copy of the plot it produces in your answer to Problem 2 below.
+
+## Problem 3 - Seasonal temperature anomalies, animated (6 points)
+
+# Problem 4 (optional) - Comparing seasonal temperature anomalies, animated 
 
 # Answers
 
