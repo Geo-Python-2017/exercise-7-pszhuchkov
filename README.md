@@ -79,7 +79,7 @@ Write your codes into a separate script called `anomaly_bar_subplots.py`, and ad
 ## Problem 1 - Answers to questions
 
 ### 1. 
-
+!(img/mavtemp.png)
 ### 2.
 
 ### 3. 
