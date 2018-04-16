@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read file
-dataHel = pd.read_csv(r"helsinki.csv")
+dataHel = pd.read_csv('helsinki.csv')
 
 # Convert column to datetime type
 dataHel['YM'] = pd.to_datetime(dataHel['YM'],format='%Y%m')
