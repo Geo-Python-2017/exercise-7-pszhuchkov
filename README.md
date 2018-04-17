@@ -81,7 +81,7 @@ Write your codes into a separate script called `anomaly_bar_subplots.py`, and ad
 ### 1. 
 ![](img/mavtemp.png)
 ### 2.
-
+![](img/anomalysubplots.png)
 ### 3. 
 
 
