@@ -53,10 +53,10 @@ min_temp = min(seasonalData.min()) - 5
 max_temp = max(seasonalData.max()) + 5
 
 # Create subplots
-seasonalData.plot(x=seasonalData.index, y='Winter', ax=ax11, c='blue', legend=True, lw=2.5, ylim=(min_temp, max_temp))
-seasonalData.plot(x=seasonalData.index, y='Spring', ax=ax12, c='blue', legend=True, lw=2.5, ylim=(min_temp, max_temp))
-seasonalData.plot(x=seasonalData.index, y='Summer', ax=ax21, c='blue', legend=True, lw=2.5, ylim=(min_temp, max_temp))
-seasonalData.plot(x=seasonalData.index, y='Fall', ax=ax22, c='blue', legend=True, lw=2.5, ylim=(min_temp, max_temp))
+seasonalData.plot(x=seasonalData.index, y='Winter', ax=ax11, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
+seasonalData.plot(x=seasonalData.index, y='Spring', ax=ax12, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
+seasonalData.plot(x=seasonalData.index, y='Summer', ax=ax21, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
+seasonalData.plot(x=seasonalData.index, y='Fall', ax=ax22, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
 
 # Set y-axis labels
 for ax in [ax11,ax21]:
@@ -65,3 +65,9 @@ for ax in [ax11,ax21]:
 # Set x-axis labels    
 for ax in [ax21,ax22]:
     ax.set_xlabel('Date')
+
+# Add legend with parameters
+ax11.legend(frameon=True,loc=2)
+ax12.legend(frameon=True,loc=1)
+ax21.legend(frameon=True,loc=3)
+ax22.legend(frameon=True,loc=4)
