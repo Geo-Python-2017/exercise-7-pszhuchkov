@@ -8,9 +8,10 @@ Author: Pavel Zhuchkov - 17.04.2018
 # Import modules
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Read file
-dataHel = pd.read_csv('helsinki.csv')
+dataHel = pd.read_csv('helsinki.csv',usecols=['YM','TAVG_Celsius','avgTempsC','Diff'])
 
 # Convert column to datetime type
 dataHel['YM'] = pd.to_datetime(dataHel['YM'],format='%Y%m')
@@ -30,10 +31,10 @@ for i in range(1953,2017):
     spring = dataHel[str(i)+'-03-01':str(i)+'-05-01'].mean()
     summer = dataHel[str(i)+'-06-01':str(i)+'-08-01'].mean()
     fall = dataHel[str(i)+'-09-01':str(i)+'-11-01'].mean()
-    seasonalData.loc[str(i)+'-01-01', ['Winter']] = winter['TAVG_Celsius']
-    seasonalData.loc[str(i)+'-01-01', ['Spring']] = spring['TAVG_Celsius']
-    seasonalData.loc[str(i)+'-01-01', ['Summer']] = summer['TAVG_Celsius']
-    seasonalData.loc[str(i)+'-01-01', ['Fall']] = fall['TAVG_Celsius']
+    seasonalData.loc[str(i)+'-01-01', ['Winter']] = winter['Diff']
+    seasonalData.loc[str(i)+'-01-01', ['Spring']] = spring['Diff']
+    seasonalData.loc[str(i)+'-01-01', ['Summer']] = summer['Diff']
+    seasonalData.loc[str(i)+'-01-01', ['Fall']] = fall['Diff']
 
 # Change style of plots
 plt.style.use('seaborn-whitegrid')
@@ -47,16 +48,14 @@ ax12 = axes[0][1]
 ax21 = axes[1][0]
 ax22 = axes[1][1]
 
-
-# Create y-limits
-min_temp = min(seasonalData.min()) - 5
-max_temp = max(seasonalData.max()) + 5
+# Create array of y-ticks
+yticks = np.arange(start=-5, stop=6, step=2.5)
 
 # Create subplots
-seasonalData.plot(x=seasonalData.index, y='Winter', ax=ax11, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
-seasonalData.plot(x=seasonalData.index, y='Spring', ax=ax12, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
-seasonalData.plot(x=seasonalData.index, y='Summer', ax=ax21, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
-seasonalData.plot(x=seasonalData.index, y='Fall', ax=ax22, c='blue', legend=False, lw=2.5, ylim=(min_temp, max_temp))
+seasonalData.plot(x=seasonalData.index, y='Winter', ax=ax11, c='blue', legend=False, lw=2.5, ylim=(-7, 7), xlim=('1950','2019'))
+seasonalData.plot(x=seasonalData.index, y='Spring', ax=ax12, c='blue', legend=False, lw=2.5, ylim=(-7, 7), xlim=('1950','2019'))
+seasonalData.plot(x=seasonalData.index, y='Summer', ax=ax21, c='blue', legend=False, lw=2.5, ylim=(-7, 7), xlim=('1950','2019'))
+seasonalData.plot(x=seasonalData.index, y='Fall', ax=ax22, c='blue', legend=False, lw=2.5, ylim=(-7, 7), xlim=('1950','2019'))
 
 # Set y-axis labels
 for ax in [ax11,ax21]:
@@ -67,7 +66,13 @@ for ax in [ax21,ax22]:
     ax.set_xlabel('Date')
 
 # Add legend with parameters
-ax11.legend(frameon=True,loc=2)
-ax12.legend(frameon=True,loc=1)
-ax21.legend(frameon=True,loc=3)
-ax22.legend(frameon=True,loc=4)
+for ax in [ax11,ax12,ax21,ax22]:
+    ax.legend(frameon=True,loc='best',framealpha=0.5)
+    
+# Set y-ticks
+for ax in [ax11,ax12,ax21,ax22]:
+    ax.yaxis.set_ticks(yticks)
+
+# Tight layout
+plt.tight_layout()
+    
