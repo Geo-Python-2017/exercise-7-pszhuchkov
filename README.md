@@ -83,6 +83,9 @@ Write your codes into a separate script called `anomaly_bar_subplots.py`, and ad
 ### 2.
 ![](img/anomalysubplots.png)
 ### 3. 
+![](img/Animation.gif)
+### 4. 
+![](img/Animation2.gif)
 
 
 
